@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Přihláška — Autoškola Mia</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand__mark">L</span><span class="brand__text">MIA<span>Autoškola · Teplice</span></span></a>
+    <nav class="nav">
+      <a href="index.html">Úvod</a>
+      <a href="ridicak.html">Řidičské průkazy</a>
+      <a href="skoleni.html">Školení</a>
+      <a href="kondicni-jizdy.html">Kondiční jízdy</a>
+      <a href="instruktor.html">Instruktor</a>
+      <a href="etesty.html">E-testy</a>
+      <a href="cenik.html">Ceník</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <a href="prihlaska.html" class="btn btn--dark btn--sm">Přihláška</a>
+      <button class="nav-toggle"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero__road"></div>
+  <div class="container">
+    <span class="eyebrow eyebrow--dark">Přihláška</span>
+    <h1>Podat přihlášku<br>do kurzu</h1>
+    <p>Vyplňte formulář a ozveme se vám s dalším postupem. Kterou skupinu vás zajímá, si můžete rozmyslet i při telefonátu.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:720px;">
+    <form class="form">
+      <div class="form-row"><label for="name">Jméno a příjmení *</label><input id="name" type="text" required></div>
+      <div class="form-row"><label for="email">E-mail *</label><input id="email" type="email" required></div>
+      <div class="form-row"><label for="phone">Telefon *</label><input id="phone" type="tel" required></div>
+      <div class="form-row">
+        <label for="group">Mám zájem o *</label>
+        <select id="group" style="width:100%; padding:.75rem .9rem; border:1.5px solid var(--line-strong); border-radius:6px; font-family:'Inter',sans-serif; font-size:.95rem; background:var(--paper);">
+          <option>Skupina B — osobní automobil</option>
+          <option>Skupina B96 / B+E — přívěs</option>
+          <option>Kondiční jízdy</option>
+          <option>Školení</option>
+          <option>Instruktorský kurz</option>
+          <option>Vrácení řidičského průkazu</option>
+        </select>
+      </div>
+      <div class="form-row"><label for="note">Poznámka</label><textarea id="note" rows="4"></textarea></div>
+      <button type="submit" class="btn btn--dark">Odeslat přihlášku</button>
+      <p class="form-note">Po odeslání vás budeme kontaktovat telefonicky nebo e-mailem a domluvíme další postup.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="margin-bottom:1rem; display:inline-flex;"><span class="brand__mark">L</span><span class="brand__text" style="color:#fff;">MIA<span>Autoškola · Teplice</span></span></a>
+        <p>Moderní autoškola s individuálním přístupem. Učíme v klidu, srozumitelně a s důrazem na bezpečnost v reálném provozu.</p>
+      </div>
+      <div><h4>Kurzy</h4><ul>
+        <li><a href="ridicak.html">Řidičské průkazy</a></li>
+        <li><a href="skoleni.html">Školení</a></li>
+        <li><a href="kondicni-jizdy.html">Kondiční jízdy</a></li>
+        <li><a href="instruktor.html">Instruktorský kurz</a></li>
+      </ul></div>
+      <div><h4>Web</h4><ul>
+        <li><a href="etesty.html">E-testy</a></li>
+        <li><a href="cenik.html">Ceník</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="prihlaska.html">Přihláška</a></li>
+      </ul></div>
+      <div><h4>Kontakt</h4><ul>
+        <li>Husitská 692, 415 01 Teplice</li>
+        <li><a href="tel:+420725510200">+420 725 510 200</a></li>
+        <li><a href="mailto:info@autoskolamia.cz">info@autoskolamia.cz</a></li>
+      </ul></div>
+    </div>
+    <div class="lane-divider" style="margin-bottom:1.4rem;"></div>
+    <div class="footer-bottom"><span>© 2026 Autoškola Mia</span><span>autoskolamia.cz</span></div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
