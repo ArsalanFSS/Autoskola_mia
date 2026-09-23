@@ -55,34 +55,3 @@ for (var j = 0; j < tabTlacitka.length; j++) {
     }
   };
 }
-
-// kviz na strance e-testy.html - jen jedna ukazkova otazka
-var kvizTlacitka = document.querySelectorAll('.quiz-opt');
-var uzOdpovezeno = false;
-
-for (var n = 0; n < kvizTlacitka.length; n++) {
-  kvizTlacitka[n].onclick = function () {
-    if (uzOdpovezeno) {
-      return;
-    }
-    uzOdpovezeno = true;
-
-    var jeSpravne = this.getAttribute('data-correct') === 'true';
-    var feedback = document.querySelector('.quiz-feedback');
-
-    for (var o = 0; o < kvizTlacitka.length; o++) {
-      if (kvizTlacitka[o].getAttribute('data-correct') === 'true') {
-        kvizTlacitka[o].classList.add('is-correct');
-      }
-    }
-
-    if (jeSpravne) {
-      feedback.innerHTML = 'Spravne! Presne takhle se ma ridic po nehode zachovat.';
-      feedback.style.color = 'green';
-    } else {
-      this.classList.add('is-wrong');
-      feedback.innerHTML = 'Spatne, spravna odpoved je zvyraznena zelene.';
-      feedback.style.color = 'red';
-    }
-  };
-}
